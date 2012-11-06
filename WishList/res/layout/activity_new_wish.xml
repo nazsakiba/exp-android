@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/book1"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/amanhecer" />
+
+    <EditText
+        android:id="@+id/editNomeProduto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/book1"
+        android:text="@string/nome_produto" />
+
+    <EditText
+        android:id="@+id/editLocalProduto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNomeProduto"
+        android:layout_toRightOf="@id/book1"
+        android:text="@string/local" />
+
+    <EditText
+        android:id="@+id/editCategoria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book1"
+        android:text="@string/categoria" />
+
+    <EditText
+        android:id="@+id/editContado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCategoria"
+        android:ems="10"
+        android:text="@string/contato" />
+
+    <Button
+        android:id="@+id/buttonPesquisar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editCategoria"
+        android:layout_toRightOf="@id/editContado"
+        android:ems="5"
+        android:text="@string/btnPesquisar" />
+
+    <EditText
+        android:id="@+id/editPrecoMinimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editContado"
+        android:text="Valor Mínimo" />
+
+    <EditText
+        android:id="@+id/editPrecoMaximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoMinimo"
+        android:ems="10"
+        android:text="Valor Máximo" />
+
+    <Button
+        android:id="@+id/buttonBuscape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editContado"
+        android:layout_toRightOf="@id/editPrecoMaximo"
+        android:text="Buscapé" />
+
+    <CheckBox
+        android:id="@+id/ckNotificarPreco"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPrecoMaximo"
+        android:ems="10"
+        android:text="Notificar Preço" />
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Salvar" />
+
+</RelativeLayout>
